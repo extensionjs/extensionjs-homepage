@@ -1,10 +1,12 @@
 {
   "name": "extensionjs-homepage",
   "alias": "extensionjs",
+  "public": true,
+  "team": "extensionjs",
   "env": {
     "NODE_ENV": "production"
   },
-  "type": "static",
+  "type": "docker",
   "static": {
     "public": "build",
     "directoryListing": false
