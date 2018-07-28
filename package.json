@@ -47,7 +47,9 @@
     "prepublishOnly": "pkg-ok",
     "prettier": "prettier --list-different '**/*.{ts, tsx}'",
     "precommit": "lint-staged",
-    "prepush": "yarn lint && yarn test"
+    "prepush": "yarn lint && yarn test",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.6",
