@@ -21,6 +21,9 @@
     "member-access": false,
     "interface-name": false,
     "prefer-array-literal": [true, { "allow-type-parameters": true }],
-    "no-console": { "severity": "warning" }
+    "no-console": { "severity": "warning" },
+    "jsx-boolean-value": false,
+    "jsx-no-lambda": false,
+    "jsx-no-multiline-js": false
   }
 }
