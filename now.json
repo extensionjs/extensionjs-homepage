@@ -1,0 +1,12 @@
+{
+  "name": "extensionjs-homepage",
+  "alias": "extensionjs",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "type": "static",
+  "static": {
+    "public": "build",
+    "directoryListing": false
+  }
+}
