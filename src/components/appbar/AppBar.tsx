@@ -20,7 +20,14 @@ const styles: StyleRulesCallback = (theme: Theme) => ({
 interface AppBarProps {
   title: string;
 }
-
+/**
+ * @render react
+ * @name AppBar
+ * @example
+ * <div>
+ *  <AppBar title="Title" />
+ * </div>
+ */
 class AppBar extends React.Component<AppBarProps & WithStyles, {}> {
 
   public render() {
