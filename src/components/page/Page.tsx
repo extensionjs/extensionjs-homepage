@@ -20,14 +20,14 @@ const styles: StyleRulesCallback = (theme: Theme) => ({
   },
 });
 
-const Hero = (props: any) => {
+const Page = (props: any) => {
   const { classes, children } = props;
   return (
     <div className={classes.container}>
       <Paper className={classes.paper}>
         <Grid container spacing={24}>
           <Grid item xs={12}>
-            {{...children}}
+            {... children}
           </Grid>
         </Grid>
       </Paper>
@@ -44,4 +44,4 @@ const Hero = (props: any) => {
  *  </Page>
  * </div>
  */
-export default withStyles(styles)<any>(Hero);
+export default withStyles(styles)<any>(Page);
