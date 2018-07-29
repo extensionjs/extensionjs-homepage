@@ -48,7 +48,7 @@
     "precommit": "lint-staged",
     "prepush": "yarn lint && yarn test",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages --dist build --branch master --repo https://github.com/extensionjs/extensionjs.github.io.git"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.6",
