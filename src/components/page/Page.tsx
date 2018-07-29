@@ -34,5 +34,14 @@ const Hero = (props: any) => {
     </div>
   );
 }
-
+/**
+ * @render react
+ * @name Page
+ * @example
+ * <div>
+ *  <Page>
+ *    <p>This is a Paragraph inside a Page Component</p>
+ *  </Page>
+ * </div>
+ */
 export default withStyles(styles)<any>(Hero);
