@@ -20,6 +20,23 @@ const styles: StyleRulesCallback = (theme: Theme) => ({
 interface AppBarProps {
   title: string;
 }
+
+class AppBar extends React.Component<AppBarProps & WithStyles, {}> {
+
+  public render() {
+    const { classes, title } = this.props;
+    return (
+      <MdAppBar className={classes.appBar}>
+        <Toolbar className={classes.toolbar} disableGutters={true}>
+          <Typography variant="title" color="inherit" noWrap>
+            {title}
+          </Typography>
+        </Toolbar>
+      </MdAppBar>
+    );
+  }
+}
+
 /**
  * @render react
  * @name AppBar
@@ -28,20 +45,4 @@ interface AppBarProps {
  *  <AppBar title="Title" />
  * </div>
  */
-class AppBar extends React.Component<AppBarProps & WithStyles, {}> {
-
-  public render() {
-    const { classes, title } = this.props;
-    return (
-      <MdAppBar className={classes.appBar}>
-        <Toolbar disableGutters={true}>
-          <Typography variant="title" color="inherit" noWrap>
-            {{title}}
-          </Typography>
-        </Toolbar>
-      </MdAppBar>
-    );
-  }
-}
-
 export default withStyles(styles)<AppBarProps>(AppBar);
