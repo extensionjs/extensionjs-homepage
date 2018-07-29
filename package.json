@@ -26,14 +26,15 @@
   "readme": "https://github.com/extensionjs/extensionjs.github.io/blob/develop/README.md",
   "dependencies": {
     "@material-ui/core": "^1.4.1",
+    "@material-ui/icons": "^2.0.0",
     "evergreen-ui": "^3.2.4",
-    "node-sass-chokidar": "^1.3.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts-ts": "2.16.0",
     "ui-box": "^1.2.0"
   },
   "scripts": {
+    "debug": "yarn start",
     "clean": "rimraf build dist",
     "prebuild": "yarn clean",
     "build": "react-scripts-ts build",
